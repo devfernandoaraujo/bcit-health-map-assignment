@@ -11,7 +11,7 @@ export class SimpleReport implements IReport{
 
     printDetails():void{
 
-         let cities: string[] = [];
+        let cities: string[] = [];
         this.map.clinics.forEach( (element:Clinic) => {
             if (!cities.includes(element.city)) {
                 console.log(`---------------City: ${element.city}---------------\n `);
